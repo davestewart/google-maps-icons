@@ -293,7 +293,7 @@ The following options can be set:
 
 ## Appendix: all icons
 
-<style>
+<style type="text/css">
 .map-icons{
 	background:#FFF; 
 	padding:20px
