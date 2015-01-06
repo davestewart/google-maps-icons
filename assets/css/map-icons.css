@@ -1,0 +1,18 @@
+.map-icons{
+	background:#FFF;
+	padding:20px
+	}
+
+.map-icons .indent{
+	margin-left:25px;
+	}
+
+.map-icons p{
+	padding: 0;
+	margin: 6px;
+	cursor: default;
+	}
+
+.map-icons p > * {
+	vertical-align:middle;
+	}
