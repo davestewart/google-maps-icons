@@ -43,8 +43,35 @@
 
 	function init()
 	{
-		var html = process(MapIcons);
-		$('.map-icons').html(html);
+		// inject html
+			var html = process(MapIcons);
+			$('.map-icons')
+				.html(html)
+				.find('span')
+				.on('mousedown', function(event)
+				{
+
+					var $e = $(this);
+
+					if($e.is('[contenteditable]'))
+					{
+						return;
+					}
+
+					var method	= $e.parent().attr('title');
+					var text	= $e.text();
+					$e
+						.attr('contenteditable', true)
+						.attr('spellcheck', false)
+						.text(method)
+						.on('blur', function()
+						{
+							console.log(this);
+							$e
+								.removeAttr('contenteditable')
+								.text(text);
+						})
+				});
 	}
 
 	var segments = ['MapIcons'];

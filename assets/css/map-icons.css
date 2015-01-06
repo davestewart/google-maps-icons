@@ -16,3 +16,15 @@
 .map-icons p > * {
 	vertical-align:middle;
 	}
+
+.map-icons span{
+	margin-left:5px;
+}
+
+.map-icons span[contenteditable]{
+	padding:6px 7px;
+	margin-left:-2px;
+	outline: none;
+	background: #EEE;
+	border-radius:3px;
+}

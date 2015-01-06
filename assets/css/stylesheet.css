@@ -155,7 +155,8 @@ pre, code {
 	background-color: #fff;
 
 	font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
-	font-size: 14px;
+	font-family: Consolas, Menlo, Monaco, monospace;
+	font-size: 12px;
 
 	border-radius: 2px;
 	-moz-border-radius: 2px;
@@ -193,9 +194,8 @@ ul, ol, dl {
 }
 
 ul {
-	list-style-position: inside;
 	list-style: disc;
-	padding-left: 20px;
+	padding-left: 50px;
 }
 
 ol {
@@ -229,6 +229,7 @@ table {
 	border: 1px solid #373737;
 	margin-bottom: 20px;
 	text-align: left;
+	background: #FFF;
  }
 
 th {
@@ -240,9 +241,21 @@ th {
 
 td {
 	padding: 10px;
-	border: 1px solid #373737;
+	border: 1px solid #EEE;
 	vertical-align: middle;
- }
+}
+
+td code{
+	box-shadow: none;
+}
+
+table img{
+	margin:0;
+}
+
+pre, table{
+	margin-left:40px;
+}
 
 form {
 	background: #f2f2f2;
@@ -412,7 +425,7 @@ Small Device Styles
 	code, pre {
 		min-width: 320px;
 		max-width: 480px;
-		font-size: 11px;
+		font-size: 10px;
 	}
 
 }
